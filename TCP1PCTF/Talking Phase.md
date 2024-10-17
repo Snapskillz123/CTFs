@@ -156,10 +156,16 @@ So first we need to understnad the conversation between A and B.
 So usually to communaticate, A encrypts a message using their private key and B recieves A's public key and their encrypted message and this happens the other way as well
 
 ## MITM
-So now that we are interrupting thier conversation, we take A's public key, and instead of sending A's key we send our own RSA generated key (e=3).
+So now that we are interrupting their conversation, we take A's public key, and instead of sending A's key we send our own RSA generated key (e=3).
+
 We do the same for B as well and obtain ciphertext.
+
 Now in the source code we can see there is a vulnerability in "giv me the damn flag you donut".
+
 We send this to B (who thinks a sent it).  B then responds  by sending a base64 encoded flag which we can easily decrypt and obtain the final flag.
+
+![image](https://github.com/user-attachments/assets/a3977ba4-4378-410f-a36c-d043aec985b0)
+
 
 
 
