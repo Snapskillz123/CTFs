@@ -1,3 +1,5 @@
+# Aditya Ram week 10 code
+## Q1
 ```java
 import java.io.*;
 import java.util.Scanner;
